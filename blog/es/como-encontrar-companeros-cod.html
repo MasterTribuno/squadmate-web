@@ -7,76 +7,114 @@
 <meta name="description" content="Todas las formas reales de encontrar compañeros de Call of Duty: dentro del juego, en Discord y para Ranked Play. Y una forma más rápida de encontrar compañeros que se quedan.">
 <link rel="canonical" href="https://squadmate.net/blog/es/como-encontrar-companeros-cod.html">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; line-height: 1.65; color: #1a1a1a; }
-  a { color: #5b5bf5; }
-  h1 { font-size: 2rem; line-height: 1.2; margin-top: 0.5em; }
-  h2 { font-size: 1.4rem; margin-top: 2em; }
-  table { width: 100%; border-collapse: collapse; margin: 1.5em 0; font-size: 0.95rem; }
-  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eee; }
-  th { border-bottom: 2px solid #ddd; }
-  .cta { background: #f5f5ff; border-radius: 12px; padding: 20px; margin-top: 3em; }
-  .back { display: inline-block; margin-bottom: 2em; font-size: 0.9rem; }
-  footer { margin-top: 4em; font-size: 0.85rem; color: #777; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f0f1a; --bg2: #1a1a2e; --purple: #7c6af0; --purple2: #a89df5;
+    --border: #2a2a4a; --text: #ffffff; --muted: #8888aa;
+  }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.7; }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid var(--border); }
+  .nav-logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+  .nav-logo span { color: var(--purple); }
+  nav a.back { color: var(--muted); text-decoration: none; font-size: 14px; }
+  nav a.back:hover { color: var(--text); }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 24px 100px; }
+  h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 800; letter-spacing: -1px; line-height: 1.15; margin-bottom: 24px; }
+  h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; margin: 2.2em 0 0.8em; color: var(--purple2); }
+  p { color: #d0d0e0; margin-bottom: 1em; font-size: 16px; }
+  ul { margin: 0 0 1.2em 1.3em; color: #d0d0e0; }
+  li { margin-bottom: 0.6em; }
+  strong { color: var(--text); }
+  a { color: var(--purple2); }
+  table { width: 100%; border-collapse: collapse; margin: 1.5em 0; font-size: 0.92rem; background: var(--bg2); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); color: #d0d0e0; }
+  th { color: var(--text); background: rgba(124,106,240,0.1); }
+  .cta { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin-top: 3em; }
+  .cta p { margin-bottom: 0; color: #d0d0e0; }
+  .note { font-size: 0.85rem; color: var(--muted); }
+  footer { border-top: 1px solid var(--border); padding: 40px; text-align: center; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--muted); }
 </style>
 </head>
 <body>
 
-<a class="back" href="/">← SquadMate</a>
+<nav>
+  <div class="nav-logo">Squad<span>Mate</span></div>
+  <a class="back" href="/blog/">← Blog</a>
+</nav>
 
+<main>
 <h1>Cómo Encontrar Compañeros de Equipo y Jugadores para CoD (Ranked, Discord, In-Game)</h1>
 
 <p>Jugar a Call of Duty en solitario cansa rápido. Ya sea que estés subiendo en Ranked Play, jugando escuadras en Warzone, o simplemente quieras gente con quien hablar en vez de silenciar la partida — encontrar compañeros fiables es una de las frustraciones más comunes entre jugadores de CoD. Esta guía repasa todas las formas reales de encontrar compañeros y jugadores para CoD, desde Discord hasta herramientas dentro del propio juego, y qué funciona realmente a largo plazo.</p>
 
 <h2>Cómo Encontrar Compañeros de CoD Dentro del Juego</h2>
+
 <p>La opción más rápida suele ser la que ya trae el propio juego:</p>
+
 <ul>
-  <li><strong>LFG / Relleno automático dentro del juego:</strong> La mayoría de los Call of Duty tienen una opción de "fill" o búsqueda de grupo en el lobby que te empareja con jugadores aleatorios. Es rápido, pero la calidad es una lotería — puedes tocarte desde compañeros excelentes hasta gente que abandona a mitad de partida.</li>
-  <li><strong>Amigos de amigos:</strong> Revisa tu lista de amigos para ver quién está conectado dentro del juego (no solo conectado a la plataforma). Las listas de amigos multiplataforma muchas veces no muestran quién está jugando de verdad en ese momento.</li>
-  <li><strong>Invitaciones después de la partida:</strong> Si tuviste una buena partida con un compañero aleatorio, mándale solicitud de amistad justo después. Es el método menos utilizado y más efectivo — la mayoría de jugadores nunca piensa en hacerlo.</li>
+<li><strong>LFG / Relleno automático dentro del juego:</strong> La mayoría de los Call of Duty tienen una opción de "fill" o búsqueda de grupo en el lobby que te empareja con jugadores aleatorios. Es rápido, pero la calidad es una lotería — puedes tocarte desde compañeros excelentes hasta gente que abandona a mitad de partida.</li>
+<li><strong>Amigos de amigos:</strong> Revisa tu lista de amigos para ver quién está conectado dentro del juego (no solo conectado a la plataforma). Las listas de amigos multiplataforma muchas veces no muestran quién está jugando de verdad en ese momento.</li>
+<li><strong>Invitaciones después de la partida:</strong> Si tuviste una buena partida con un compañero aleatorio, mándale solicitud de amistad justo después. Es el método menos utilizado y más efectivo — la mayoría de jugadores nunca piensa en hacerlo.</li>
 </ul>
+
 <p>El problema de todo esto es la falta de constancia. Consigues un buen escuadrón para una sesión y a la siguiente vez que entras vuelves a empezar de cero.</p>
+
 <p>Si quieres compañeros que se queden en el tiempo en lugar de partidas puntuales, <strong>SquadMate</strong> te permite montar un escuadrón real filtrando por plataforma, rango y estilo de juego — sin tener que volver a tirar los dados en cada sesión.</p>
 
 <h2>Cómo Encontrar Jugadores de CoD para Jugar en Discord</h2>
+
 <p>Discord es el lugar más popular para encontrar jugadores de CoD fuera del propio juego:</p>
+
 <ul>
-  <li><strong>Busca servidores "CoD LFG" o "Call of Duty LFG":</strong> Existen comunidades grandes y activas creadas específicamente para encontrar escuadra. La mayoría tienen canales separados por plataforma y región.</li>
-  <li><strong>Usa el bot o canal de LFG del servidor:</strong> Los servidores más grandes tienen un bot donde publicas tu rango, plataforma y si tienes micro, para que la gente pueda emparejar contigo directamente en vez de leer un muro de mensajes.</li>
-  <li><strong>Únete a servidores específicos por plataforma:</strong> Xbox, PlayStation y PC tienen cada uno su propia dinámica y expectativas de crossplay — unirte al servidor correcto te ahorra tiempo.</li>
+<li><strong>Busca servidores "CoD LFG" o "Call of Duty LFG":</strong> Existen comunidades grandes y activas creadas específicamente para encontrar escuadra. La mayoría tienen canales separados por plataforma y región.</li>
+<li><strong>Usa el bot o canal de LFG del servidor:</strong> Los servidores más grandes tienen un bot donde publicas tu rango, plataforma y si tienes micro, para que la gente pueda emparejar contigo directamente en vez de leer un muro de mensajes.</li>
+<li><strong>Únete a servidores específicos por plataforma:</strong> Xbox, PlayStation y PC tienen cada uno su propia dinámica y expectativas de crossplay — unirte al servidor correcto te ahorra tiempo.</li>
 </ul>
+
 <p>El problema de Discord es el volumen y el ruido: decenas de mensajes por minuto, sin filtros, y sin forma de saber si alguien realmente juega bien contigo hasta que ya has perdido una partida averiguándolo. Este es justo el hueco que cubre <strong>SquadMate</strong> — en vez de estar mirando un chat en directo, obtienes una lista filtrada de jugadores por rango, idioma y disponibilidad, sin spam.</p>
 
 <h2>Cómo Encontrar Compañeros para el Ranked de CoD</h2>
+
 <p>El Ranked Play sube la apuesta — un mal compañero aquí te puede costar SR, no solo una partida casual. Hay varias cosas que importan más cuando buscas compañeros específicamente para ranked:</p>
+
 <ul>
-  <li><strong>Empareja por división de habilidad, no solo por el número de rango:</strong> Un jugador varias divisiones por debajo o por encima puede descompensar más al equipo que una partida normal con desconocidos.</li>
-  <li><strong>Aclara las expectativas de comunicación desde el principio:</strong> Los escuadrones de ranked dependen de los callouts. Busca jugadores que digan explícitamente que usan micro y comunicación.</li>
-  <li><strong>Prioriza la constancia sobre partidas sueltas:</strong> Un escuadrón fijo de ranked que juega junto durante toda la temporada sube más rápido que un reparto rotativo de desconocidos.</li>
+<li><strong>Empareja por división de habilidad, no solo por el número de rango:</strong> Un jugador varias divisiones por debajo o por encima puede descompensar más al equipo que una partida normal con desconocidos.</li>
+<li><strong>Aclara las expectativas de comunicación desde el principio:</strong> Los escuadrones de ranked dependen de los callouts. Busca jugadores que digan explícitamente que usan micro y comunicación.</li>
+<li><strong>Prioriza la constancia sobre partidas sueltas:</strong> Un escuadrón fijo de ranked que juega junto durante toda la temporada sube más rápido que un reparto rotativo de desconocidos.</li>
 </ul>
+
 <p>Cada nueva temporada de CoD resetea los rangos y trae una nueva oleada de jugadores buscando montar escuadra desde cero — es también el mejor momento para encontrar compañeros que van en serio con subir de rango contigo. <strong>SquadMate</strong> te permite filtrar específicamente por rango y plataforma, para que empareces con gente de tu nivel real en vez de confiar en que un mensaje de Discord llegue a la persona adecuada.</p>
 
 <h2>Dónde Encontrar Compañeros de Ranked de CoD: Comparativa Rápida</h2>
+
 <table>
-  <tr><th>Método</th><th>Mejor para</th><th>Desventaja</th></tr>
-  <tr><td>Relleno dentro del juego</td><td>Partidas rápidas y casuales</td><td>Sin control sobre quién te toca</td></tr>
-  <tr><td>Servidores de Discord LFG</td><td>Más jugadores activos disponibles</td><td>Ruidoso, difícil de filtrar, sin garantías</td></tr>
-  <tr><td>Amigos de amigos</td><td>Jugadores conocidos y de confianza</td><td>Grupo pequeño, no escala</td></tr>
-  <tr><td>SquadMate</td><td>Filtrado por rango, plataforma e idioma</td><td>Requiere crear un perfil</td></tr>
+<tr><th>Método</th><th>Mejor para</th><th>Desventaja</th></tr>
+<tr><td>Relleno dentro del juego</td><td>Partidas rápidas y casuales</td><td>Sin control sobre quién te toca</td></tr>
+<tr><td>Servidores de Discord LFG</td><td>Más jugadores activos disponibles</td><td>Ruidoso, difícil de filtrar, sin garantías</td></tr>
+<tr><td>Amigos de amigos</td><td>Jugadores conocidos y de confianza</td><td>Grupo pequeño, no escala</td></tr>
+<tr><td>SquadMate</td><td>Filtrado por rango, plataforma e idioma</td><td>Requiere crear un perfil</td></tr>
 </table>
 
 <h2>Preguntas Frecuentes</h2>
-<p><strong>¿Cómo encuentro compañeros de CoD sin usar Discord?</strong><br>
+
+<p><strong>¿Cómo encuentro compañeros de CoD sin usar Discord?</strong><br/>
 El relleno dentro del juego y las invitaciones a amigos de amigos funcionan sin salir del juego, pero para tener una escuadra constante, una app como SquadMate te permite filtrar y emparejar con jugadores sin necesidad de cuenta de Discord.</p>
-<p><strong>¿Es difícil encontrar compañeros de CoD para Ranked Play?</strong><br>
+
+<p><strong>¿Es difícil encontrar compañeros de CoD para Ranked Play?</strong><br/>
 No, si sabes concretar qué buscas — rango, plataforma y preferencia de comunicación. Lo difícil suele ser filtrar a los jugadores que no encajan, que es justo lo que resuelven las herramientas de LFG dedicadas.</p>
-<p><strong>¿Puedo encontrar compañeros de CoD en otras plataformas si juego en consola?</strong><br>
+
+<p><strong>¿Puedo encontrar compañeros de CoD en otras plataformas si juego en consola?</strong><br/>
 Sí, si el crossplay está activado en tu modo de juego. Las herramientas que permiten filtrar por plataforma (como SquadMate) facilitan encontrar compañeros compatibles con crossplay específicamente.</p>
 
 <div class="cta">
-  <p>¿Buscas compañeros de CoD que se queden de verdad? <a href="/">SquadMate</a> te permite filtrar jugadores por rango, plataforma e idioma para montar un escuadrón real — no solo rellenar un lobby.</p>
+<p>¿Buscas compañeros de CoD que se queden de verdad? <a href="/">SquadMate</a> te permite filtrar jugadores por rango, plataforma e idioma para montar un escuadrón real — no solo rellenar un lobby.</p>
 </div>
+</main>
 
-<footer>© 2026 SquadMate</footer>
+<footer>
+  <p>© 2026 <a href="/">SquadMate</a></p>
+</footer>
 
 </body>
 </html>
