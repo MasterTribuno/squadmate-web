@@ -7,62 +7,101 @@
 <meta name="description" content="Every way to find Apex Legends teammates: in-game, Discord, Reddit, and Ranked. Plus a faster way to find teammates who stick around.">
 <link rel="canonical" href="https://squadmate.net/blog/how-to-find-apex-teammates.html">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; line-height: 1.65; color: #1a1a1a; }
-  a { color: #5b5bf5; }
-  h1 { font-size: 2rem; line-height: 1.2; margin-top: 0.5em; }
-  h2 { font-size: 1.4rem; margin-top: 2em; }
-  .cta { background: #f5f5ff; border-radius: 12px; padding: 20px; margin-top: 3em; }
-  .back { display: inline-block; margin-bottom: 2em; font-size: 0.9rem; }
-  footer { margin-top: 4em; font-size: 0.85rem; color: #777; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f0f1a; --bg2: #1a1a2e; --purple: #7c6af0; --purple2: #a89df5;
+    --border: #2a2a4a; --text: #ffffff; --muted: #8888aa;
+  }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.7; }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid var(--border); }
+  .nav-logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+  .nav-logo span { color: var(--purple); }
+  nav a.back { color: var(--muted); text-decoration: none; font-size: 14px; }
+  nav a.back:hover { color: var(--text); }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 24px 100px; }
+  h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 800; letter-spacing: -1px; line-height: 1.15; margin-bottom: 24px; }
+  h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; margin: 2.2em 0 0.8em; color: var(--purple2); }
+  p { color: #d0d0e0; margin-bottom: 1em; font-size: 16px; }
+  ul { margin: 0 0 1.2em 1.3em; color: #d0d0e0; }
+  li { margin-bottom: 0.6em; }
+  strong { color: var(--text); }
+  a { color: var(--purple2); }
+  table { width: 100%; border-collapse: collapse; margin: 1.5em 0; font-size: 0.92rem; background: var(--bg2); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); color: #d0d0e0; }
+  th { color: var(--text); background: rgba(124,106,240,0.1); }
+  .cta { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin-top: 3em; }
+  .cta p { margin-bottom: 0; color: #d0d0e0; }
+  .note { font-size: 0.85rem; color: var(--muted); }
+  footer { border-top: 1px solid var(--border); padding: 40px; text-align: center; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--muted); }
 </style>
 </head>
 <body>
 
-<a class="back" href="/">← SquadMate</a>
+<nav>
+  <div class="nav-logo">Squad<span>Mate</span></div>
+  <a class="back" href="/blog/">← Blog</a>
+</nav>
 
-<h1>How to Find Apex Legends Teammates (Ranked, Discord & In-Game)</h1>
+<main>
+<h1>How to Find Apex Legends Teammates (Ranked, Discord &amp; In-Game)</h1>
 
 <p>A bad third teammate can turn a good Apex run into a quick trip back to the lobby. Whether you're playing casual Battle Royale or grinding Ranked, finding people who actually play well with you — and stick around for more than one match — makes the biggest difference in how much fun the game is. Here's every real way to find Apex Legends teammates, and what to expect from each.</p>
 
 <h2>How to Find Apex Teammates In-Game</h2>
+
 <p>Apex's built-in matchmaking pairs you with random squadmates by default, but there are a few ways to improve on that:</p>
+
 <ul>
-  <li><strong>Add recent players:</strong> After a good match, check your recent players list and send a friend request before you forget. It's the easiest way to build a small pool of decent teammates over time.</li>
-  <li><strong>Use the in-game LFG panel</strong> if your platform offers one, to signal you're looking for a squad rather than solo-queuing into randoms.</li>
-  <li><strong>Party up with platform friends</strong> — obvious, but worth checking who's actually online and in Apex specifically, not just logged into the platform.</li>
+<li><strong>Add recent players:</strong> After a good match, check your recent players list and send a friend request before you forget. It's the easiest way to build a small pool of decent teammates over time.</li>
+<li><strong>Use the in-game LFG panel</strong> if your platform offers one, to signal you're looking for a squad rather than solo-queuing into randoms.</li>
+<li><strong>Party up with platform friends</strong> — obvious, but worth checking who's actually online and in Apex specifically, not just logged into the platform.</li>
 </ul>
+
 <p>The catch: recent-players lists reset, and casual randoms rarely turn into a consistent squad. <strong>SquadMate</strong> solves that by letting you build a real roster of Apex teammates filtered by rank, platform, and language, instead of relying on who you happen to land with.</p>
 
 <h2>How to Find Apex Teammates on Discord and Reddit</h2>
+
 <p>Outside the game, Discord and Reddit are where most players go looking for a squad:</p>
+
 <ul>
-  <li><strong>Apex LFG Discord servers</strong> — large communities with dedicated channels by platform and rank, often with a bot to post your looking-for-group status.</li>
-  <li><strong>r/ApexLegends and r/ApexLFG-style threads</strong> — weekly or pinned LFG posts where players list rank, platform, and mic status.</li>
+<li><strong>Apex LFG Discord servers</strong> — large communities with dedicated channels by platform and rank, often with a bot to post your looking-for-group status.</li>
+<li><strong>r/ApexLegends and r/ApexLFG-style threads</strong> — weekly or pinned LFG posts where players list rank, platform, and mic status.</li>
 </ul>
+
 <p>Both work, but they share the same problem: no filtering, no accountability, and a lot of scrolling to find someone who actually matches what you're looking for. That's the gap <strong>SquadMate</strong> fills — a filtered list of Apex players by rank and platform, without digging through a Discord server or a Reddit thread.</p>
 
 <h2>How to Find Apex Ranked Teammates</h2>
+
 <p>Ranked is where teammate quality matters most — a mismatched squad can cost you RP fast. A few things to prioritize when looking specifically for ranked teammates:</p>
+
 <ul>
-  <li><strong>Match by rank, not just by "good" or "bad"</strong> — a Platinum player and a Diamond player have very different expectations of rotations and positioning.</li>
-  <li><strong>Look for players who specify their main legend and role</strong> — a squad with three duplicate roles struggles more than one with complementary picks.</li>
-  <li><strong>Prioritize a fixed squad over one-off ranked games</strong> — playing consistently with the same two teammates across a split climbs faster than solo-queuing every session.</li>
+<li><strong>Match by rank, not just by "good" or "bad"</strong> — a Platinum player and a Diamond player have very different expectations of rotations and positioning.</li>
+<li><strong>Look for players who specify their main legend and role</strong> — a squad with three duplicate roles struggles more than one with complementary picks.</li>
+<li><strong>Prioritize a fixed squad over one-off ranked games</strong> — playing consistently with the same two teammates across a split climbs faster than solo-queuing every session.</li>
 </ul>
+
 <p><strong>SquadMate</strong> lets you filter specifically by rank and platform, so you spend less time vetting randoms and more time actually climbing.</p>
 
 <h2>FAQ</h2>
-<p><strong>How do I find Apex teammates without Discord?</strong><br>
+
+<p><strong>How do I find Apex teammates without Discord?</strong><br/>
 Adding recent players in-game works, but for a consistent squad without needing a Discord account, an app like SquadMate lets you filter and match with players directly.</p>
-<p><strong>Is it hard to find good Apex Legends teammates?</strong><br>
+
+<p><strong>Is it hard to find good Apex Legends teammates?</strong><br/>
 It's less about difficulty and more about filtering — most players you meet are fine, the challenge is matching rank, platform, and playstyle, which dedicated LFG tools solve faster than random threads.</p>
-<p><strong>Can I find Apex teammates on other platforms?</strong><br>
+
+<p><strong>Can I find Apex teammates on other platforms?</strong><br/>
 Yes, if crossplay is enabled. Filtering by platform (as SquadMate does) makes it easier to find teammates you can actually squad up with across PS5, Xbox, and PC.</p>
 
 <div class="cta">
-  <p>Looking for Apex teammates who actually stick around? <a href="/">SquadMate</a> lets you filter players by rank, platform, and language so you can build a real squad — not just fill a lobby.</p>
+<p>Looking for Apex teammates who actually stick around? <a href="/">SquadMate</a> lets you filter players by rank, platform, and language so you can build a real squad — not just fill a lobby.</p>
 </div>
+</main>
 
-<footer>© 2026 SquadMate</footer>
+<footer>
+  <p>© 2026 <a href="/">SquadMate</a></p>
+</footer>
 
 </body>
 </html>
