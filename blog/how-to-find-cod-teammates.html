@@ -7,76 +7,114 @@
 <meta name="description" content="Every real way to find Call of Duty teammates: in-game fill, Discord LFG servers, and Ranked Play squads. Plus a faster way to find teammates who stick around.">
 <link rel="canonical" href="https://squadmate.net/blog/how-to-find-cod-teammates.html">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; line-height: 1.65; color: #1a1a1a; }
-  a { color: #5b5bf5; }
-  h1 { font-size: 2rem; line-height: 1.2; margin-top: 0.5em; }
-  h2 { font-size: 1.4rem; margin-top: 2em; }
-  table { width: 100%; border-collapse: collapse; margin: 1.5em 0; font-size: 0.95rem; }
-  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eee; }
-  th { border-bottom: 2px solid #ddd; }
-  .cta { background: #f5f5ff; border-radius: 12px; padding: 20px; margin-top: 3em; }
-  .back { display: inline-block; margin-bottom: 2em; font-size: 0.9rem; }
-  footer { margin-top: 4em; font-size: 0.85rem; color: #777; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f0f1a; --bg2: #1a1a2e; --purple: #7c6af0; --purple2: #a89df5;
+    --border: #2a2a4a; --text: #ffffff; --muted: #8888aa;
+  }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.7; }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid var(--border); }
+  .nav-logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+  .nav-logo span { color: var(--purple); }
+  nav a.back { color: var(--muted); text-decoration: none; font-size: 14px; }
+  nav a.back:hover { color: var(--text); }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 24px 100px; }
+  h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 800; letter-spacing: -1px; line-height: 1.15; margin-bottom: 24px; }
+  h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; margin: 2.2em 0 0.8em; color: var(--purple2); }
+  p { color: #d0d0e0; margin-bottom: 1em; font-size: 16px; }
+  ul { margin: 0 0 1.2em 1.3em; color: #d0d0e0; }
+  li { margin-bottom: 0.6em; }
+  strong { color: var(--text); }
+  a { color: var(--purple2); }
+  table { width: 100%; border-collapse: collapse; margin: 1.5em 0; font-size: 0.92rem; background: var(--bg2); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); color: #d0d0e0; }
+  th { color: var(--text); background: rgba(124,106,240,0.1); }
+  .cta { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin-top: 3em; }
+  .cta p { margin-bottom: 0; color: #d0d0e0; }
+  .note { font-size: 0.85rem; color: var(--muted); }
+  footer { border-top: 1px solid var(--border); padding: 40px; text-align: center; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--muted); }
 </style>
 </head>
 <body>
 
-<a class="back" href="/">← SquadMate</a>
+<nav>
+  <div class="nav-logo">Squad<span>Mate</span></div>
+  <a class="back" href="/blog/">← Blog</a>
+</nav>
 
-<h1>How to Find COD Teammates & Players (Ranked, Discord, In-Game)</h1>
+<main>
+<h1>How to Find COD Teammates &amp; Players (Ranked, Discord, In-Game)</h1>
 
 <p>Playing Call of Duty solo gets old fast. Whether you're grinding Ranked Play, running Warzone squads, or just want people to talk to instead of muting the lobby — finding reliable teammates is one of the most common frustrations for CoD players. This guide covers every real way to find COD teammates and players, from Discord servers to in-game tools, and what actually works long-term.</p>
 
 <h2>How to Find COD Teammates In-Game</h2>
+
 <p>The fastest option is usually the one built into the game itself:</p>
+
 <ul>
-  <li><strong>In-game LFG / Squad Fill:</strong> Most Call of Duty titles have a "fill" or looking-for-group option in the lobby that pairs you with random players. It's quick, but quality is a lottery — you'll get anything from great teammates to people who leave mid-match.</li>
-  <li><strong>Friends of friends:</strong> Check your friends list for people who are online in-game (not just logged into the platform). Cross-platform friends lists often hide who's actually playing right now.</li>
-  <li><strong>Post-match invites:</strong> If you had a good match with a random teammate, send a friend request right after. It's the single most underused method — most players never think to do it.</li>
+<li><strong>In-game LFG / Squad Fill:</strong> Most Call of Duty titles have a "fill" or looking-for-group option in the lobby that pairs you with random players. It's quick, but quality is a lottery — you'll get anything from great teammates to people who leave mid-match.</li>
+<li><strong>Friends of friends:</strong> Check your friends list for people who are online in-game (not just logged into the platform). Cross-platform friends lists often hide who's actually playing right now.</li>
+<li><strong>Post-match invites:</strong> If you had a good match with a random teammate, send a friend request right after. It's the single most underused method — most players never think to do it.</li>
 </ul>
+
 <p>The problem with all of these is consistency. You get a good squad for one session and then you're back to searching next time you log in.</p>
+
 <p>If you want teammates who stick around instead of one-off matches, <strong>SquadMate</strong> lets you build a real squad by filtering for platform, rank, and play style — so you're not re-rolling the dice every session.</p>
 
 <h2>How to Find COD Players to Play With on Discord</h2>
+
 <p>Discord is the most popular place to find CoD players outside the game itself:</p>
+
 <ul>
-  <li><strong>Search "CoD LFG" or "Call of Duty LFG" servers:</strong> There are large, active Discord communities built specifically around finding squads. Most have dedicated channels split by platform and region.</li>
-  <li><strong>Use the server's LFG bot or channel:</strong> Bigger servers have a bot that posts your rank, platform, and mic status so people can match with you directly, instead of scrolling a wall of messages.</li>
-  <li><strong>Join platform-specific servers:</strong> Xbox, PlayStation, and PC communities each have their own etiquette and crossplay expectations — joining the right one saves time.</li>
+<li><strong>Search "CoD LFG" or "Call of Duty LFG" servers:</strong> There are large, active Discord communities built specifically around finding squads. Most have dedicated channels split by platform and region.</li>
+<li><strong>Use the server's LFG bot or channel:</strong> Bigger servers have a bot that posts your rank, platform, and mic status so people can match with you directly, instead of scrolling a wall of messages.</li>
+<li><strong>Join platform-specific servers:</strong> Xbox, PlayStation, and PC communities each have their own etiquette and crossplay expectations — joining the right one saves time.</li>
 </ul>
+
 <p>The downside of Discord LFG is volume and noise: dozens of messages a minute, no filters, and no way to know if someone is actually good to play with until you've already wasted a game finding out. This is exactly the gap <strong>SquadMate</strong> is built to close — instead of scrolling a live chat, you get a filtered list of players by rank, language, and availability, without the spam.</p>
 
 <h2>How to Find COD Ranked Teammates</h2>
+
 <p>Ranked Play raises the stakes — a bad teammate here can cost you SR, not just a casual match. A few things matter more when you're specifically looking for ranked teammates:</p>
+
 <ul>
-  <li><strong>Match by skill division, not just rank number:</strong> A player several divisions below or above you can throw off team balance more than a random pub match would.</li>
-  <li><strong>Check communication expectations upfront:</strong> Ranked squads live or die on callouts. Look for players who explicitly say they use a mic and comms.</li>
-  <li><strong>Look for consistency over one-off runs:</strong> A fixed ranked squad that plays together across a season climbs faster than a rotating cast of randoms.</li>
+<li><strong>Match by skill division, not just rank number:</strong> A player several divisions below or above you can throw off team balance more than a random pub match would.</li>
+<li><strong>Check communication expectations upfront:</strong> Ranked squads live or die on callouts. Look for players who explicitly say they use a mic and comms.</li>
+<li><strong>Look for consistency over one-off runs:</strong> A fixed ranked squad that plays together across a season climbs faster than a rotating cast of randoms.</li>
 </ul>
+
 <p>Every new CoD season resets ranks and brings a fresh wave of players looking to build a squad from scratch — which is also the best time to find teammates who are serious about climbing with you. <strong>SquadMate</strong> lets you filter specifically by rank and platform, so you're matching with people at your actual skill level instead of hoping a Discord post lands with the right person.</p>
 
 <h2>Where to Find COD Ranked Teammates: Quick Comparison</h2>
+
 <table>
-  <tr><th>Method</th><th>Best for</th><th>Downside</th></tr>
-  <tr><td>In-game fill</td><td>Fast, casual matches</td><td>No control over who you get</td></tr>
-  <tr><td>Discord LFG servers</td><td>Larger pool of active players</td><td>Noisy, hard to filter, no accountability</td></tr>
-  <tr><td>Friends of friends</td><td>Trusted, known players</td><td>Small pool, doesn't scale</td></tr>
-  <tr><td>SquadMate</td><td>Filtered by rank, platform & language</td><td>Requires setting up a profile</td></tr>
+<tr><th>Method</th><th>Best for</th><th>Downside</th></tr>
+<tr><td>In-game fill</td><td>Fast, casual matches</td><td>No control over who you get</td></tr>
+<tr><td>Discord LFG servers</td><td>Larger pool of active players</td><td>Noisy, hard to filter, no accountability</td></tr>
+<tr><td>Friends of friends</td><td>Trusted, known players</td><td>Small pool, doesn't scale</td></tr>
+<tr><td>SquadMate</td><td>Filtered by rank, platform &amp; language</td><td>Requires setting up a profile</td></tr>
 </table>
 
 <h2>FAQ</h2>
-<p><strong>How do I find CoD teammates without Discord?</strong><br>
+
+<p><strong>How do I find CoD teammates without Discord?</strong><br/>
 In-game fill and friend-of-friend invites work without leaving the game, but for a consistent squad, an app like SquadMate lets you filter and match with players without needing a Discord account.</p>
-<p><strong>Is it hard to find CoD teammates for Ranked Play?</strong><br>
+
+<p><strong>Is it hard to find CoD teammates for Ranked Play?</strong><br/>
 Not if you're specific about what you're looking for — rank, platform, and comms preference. The hard part is usually filtering out mismatched players, which is what dedicated LFG tools solve.</p>
-<p><strong>Can I find COD teammates on other platforms if I play on console?</strong><br>
+
+<p><strong>Can I find COD teammates on other platforms if I play on console?</strong><br/>
 Yes, if crossplay is enabled for your mode. Tools that let you filter by platform (like SquadMate) make it easier to find crossplay-friendly teammates specifically.</p>
 
 <div class="cta">
-  <p>Looking for CoD teammates who actually stick around? <a href="/">SquadMate</a> lets you filter players by rank, platform, and language so you can build a real squad — not just fill a lobby.</p>
+<p>Looking for CoD teammates who actually stick around? <a href="/">SquadMate</a> lets you filter players by rank, platform, and language so you can build a real squad — not just fill a lobby.</p>
 </div>
+</main>
 
-<footer>© 2026 SquadMate</footer>
+<footer>
+  <p>© 2026 <a href="/">SquadMate</a></p>
+</footer>
 
 </body>
 </html>
